@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20D91" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="PixabayImage" representedClassName="PixabayImage" syncable="YES">
+        <attribute name="comments" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="comments"/>
+            </userInfo>
+        </attribute>
+        <attribute name="downloads" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="downloads"/>
+            </userInfo>
+        </attribute>
+        <attribute name="favorites" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="favorites"/>
+            </userInfo>
+        </attribute>
+        <attribute name="fullHDURL" optional="YES" attributeType="String">
+            <userInfo>
+                <entry key="JSONKeyPath" value="fullHDURL"/>
+            </userInfo>
+        </attribute>
+        <attribute name="identifier" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="imageHeight" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="imageHeight"/>
+            </userInfo>
+        </attribute>
+        <attribute name="imageSize" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="imageSize"/>
+            </userInfo>
+        </attribute>
+        <attribute name="imageURL" optional="YES" attributeType="String">
+            <userInfo>
+                <entry key="JSONKeyPath" value="imageURL"/>
+            </userInfo>
+        </attribute>
+        <attribute name="imageWidth" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="imageWidth"/>
+            </userInfo>
+        </attribute>
+        <attribute name="largeImageURL" optional="YES" attributeType="String">
+            <userInfo>
+                <entry key="JSONKeyPath" value="largeImageURL"/>
+            </userInfo>
+        </attribute>
+        <attribute name="likes" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="likes"/>
+            </userInfo>
+        </attribute>
+        <attribute name="pageURL" optional="YES" attributeType="String">
+            <userInfo>
+                <entry key="JSONKeyPath" value="pageURL"/>
+            </userInfo>
+        </attribute>
+        <attribute name="previewHeight" optional="YES" attributeType="Float" defaultValueString="0" usesScalarValueType="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="previewHeight"/>
+            </userInfo>
+        </attribute>
+        <attribute name="previewURL" optional="YES" attributeType="String">
+            <userInfo>
+                <entry key="JSONKeyPath" value="previewURL"/>
+            </userInfo>
+        </attribute>
+        <attribute name="previewWidth" optional="YES" attributeType="Float" defaultValueString="0" usesScalarValueType="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="previewWidth"/>
+            </userInfo>
+        </attribute>
+        <attribute name="tags" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromDataTransformer" customClassName="NSArray&lt;NSString *&gt;">
+            <userInfo>
+                <entry key="JSONKeyPath" value="tags"/>
+            </userInfo>
+        </attribute>
+        <attribute name="type" optional="YES" attributeType="String">
+            <userInfo>
+                <entry key="JSONKeyPath" value="type"/>
+            </userInfo>
+        </attribute>
+        <attribute name="user" optional="YES" attributeType="String">
+            <userInfo>
+                <entry key="JSONKeyPath" value="user"/>
+            </userInfo>
+        </attribute>
+        <attribute name="user_id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="user_id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="userImageURL" optional="YES" attributeType="String">
+            <userInfo>
+                <entry key="JSONKeyPath" value="userImageURL"/>
+            </userInfo>
+        </attribute>
+        <attribute name="views" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="views"/>
+            </userInfo>
+        </attribute>
+        <attribute name="webformatHeight" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="webformatHeight"/>
+            </userInfo>
+        </attribute>
+        <attribute name="webformatURL" optional="YES" attributeType="String">
+            <userInfo>
+                <entry key="JSONKeyPath" value="webformatURL"/>
+            </userInfo>
+        </attribute>
+        <attribute name="webformatWidth" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="webformatWidth"/>
+            </userInfo>
+        </attribute>
+        <relationship name="response" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PixabayResponse" inverseName="hits" inverseEntity="PixabayResponse"/>
+        <userInfo>
+            <entry key="JSONKeyPath" value="pageURL"/>
+        </userInfo>
+    </entity>
+    <entity name="PixabayResponse" representedClassName="PixabayResponse" syncable="YES">
+        <attribute name="searchedTerm" optional="YES" attributeType="String"/>
+        <attribute name="total" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="total"/>
+            </userInfo>
+        </attribute>
+        <attribute name="totalHits" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="totalHits"/>
+            </userInfo>
+        </attribute>
+        <relationship name="hits" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PixabayImage" inverseName="response" inverseEntity="PixabayImage">
+            <userInfo>
+                <entry key="JSONKeyPath" value="hits"/>
+            </userInfo>
+        </relationship>
+    </entity>
+    <elements>
+        <element name="PixabayImage" positionX="-63" positionY="-18" width="128" height="418"/>
+        <element name="PixabayResponse" positionX="224.943115234375" positionY="284.0674438476562" width="128" height="103"/>
+    </elements>
+</model>
